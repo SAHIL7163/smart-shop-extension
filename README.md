@@ -1,4 +1,4 @@
-# 🛍️ Smart Shopper – Find Cheaper & Better Products
+<img width="1595" height="926" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/d0c4dd27-8898-44ae-ae9d-9c632cbbd96c" /># 🛍️ Smart Shopper – Find Cheaper & Better Products
 
 Smart Shopper is a Chrome Extension that helps users find cheaper or better alternatives to products on Amazon.  
 When browsing a product page, simply click the extension to get a list of AI-powered suggestions with prices, product images, links, and a quick comparison.
@@ -17,14 +17,10 @@ When browsing a product page, simply click the extension to get a list of AI-pow
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot (319)" src="https://github.com/user-attachments/assets/cc3a947a-8adb-44a2-8262-a545782d9fd9" />
-<img width="1920" height="1080" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/61b0e689-1548-485d-aaae-3df10097bfc6" />
-<img width="1920" height="1080" alt="Screenshot (318)" src="https://github.com/user-attachments/assets/f5ebd3b7-ea8e-405e-ad97-d8b6d60feec3" />
+<img width="1731" height="873" alt="Screenshot (319)" src="https://github.com/user-attachments/assets/2142748b-0c8f-4a6c-93d5-e5fc0094adf0" />
+<img width="1595" height="926" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/46baaf5e-4f1f-460b-b9fa-e78b54458576" />
+<img width="1591" height="923" alt="Screenshot (318)" src="https://github.com/user-attachments/assets/6add0fc0-dc60-4f6c-92f2-7d922ab0bbbc" />
 
-
-(Save your screenshots inside a folder named `assets/` and update the file paths above.)
-
----
 
 ## 🛠️ Tech Stack
 

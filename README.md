@@ -1,4 +1,5 @@
-<img width="1595" height="926" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/d0c4dd27-8898-44ae-ae9d-9c632cbbd96c" /># 🛍️ Smart Shopper – Find Cheaper & Better Products
+# 🛍️ Smart Shopper – Find Cheaper & Better Products
+<img width="1595" height="926" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/d0c4dd27-8898-44ae-ae9d-9c632cbbd96c" /># 🛍️ Smart Shopper – 
 
 Smart Shopper is a Chrome Extension that helps users find cheaper or better alternatives to products on Amazon.  
 When browsing a product page, simply click the extension to get a list of AI-powered suggestions with prices, product images, links, and a quick comparison.
@@ -24,7 +25,10 @@ When browsing a product page, simply click the extension to get a list of AI-pow
 
 ## 🚀 Installation (Developer Mode)
 
-1. Clone this repository:  ```bash git clone https://github.com/yourusername/smart-shopper-extension.git```
+1. Clone this repository:  1. Clone this repository:  
+   ```bash
+   git clone https://github.com/yourusername/smart-shopper-extension.git
+
 2. Open Chrome and go to:  chrome://extensions/
 3. Enable Developer mode (top-right corner).
 4 .Click Load unpacked and select the project folder.

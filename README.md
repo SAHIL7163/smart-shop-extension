@@ -24,10 +24,9 @@ When browsing a product page, simply click the extension to get a list of AI-pow
 
 ## 🚀 Installation (Developer Mode)
 
-1. Clone this repository:   git clone https://github.com/yourusername/smart-shopper-extension.git
+1. Clone this repository:  ```bash git clone https://github.com/yourusername/smart-shopper-extension.git```
 2. Open Chrome and go to:  chrome://extensions/
 3. Enable Developer mode (top-right corner).
 4 .Click Load unpacked and select the project folder.
 5. Pin the extension to your Chrome toolbar.
-   ```bash
-   git clone https://github.com/yourusername/smart-shopper-extension.git
+

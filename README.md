@@ -15,15 +15,7 @@ When browsing a product page, simply click the extension to get a list of AI-pow
 
 ---
 
-## 📸 Screenshots
-
-<img width="1731" height="873" alt="Screenshot (319)" src="https://github.com/user-attachments/assets/2142748b-0c8f-4a6c-93d5-e5fc0094adf0" />
-<img width="1595" height="926" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/46baaf5e-4f1f-460b-b9fa-e78b54458576" />
-<img width="1591" height="923" alt="Screenshot (318)" src="https://github.com/user-attachments/assets/6add0fc0-dc60-4f6c-92f2-7d922ab0bbbc" />
-
-
 ## 🛠️ Tech Stack
-
 - Frontend: HTML, CSS, JavaScript (Chrome Extension Manifest V3)  
 - API: RapidAPI (Real-time Product Search) + AI Comparison  
 - Storage: Local Storage (for caching)  

@@ -1,6 +1,15 @@
 function getProductData() {
   const title = document.getElementById("productTitle")?.innerText.trim();
-  const price = document.querySelector(".a-price .a-offscreen")?.innerText;
+  let price = document.querySelector(".a-price .a-offscreen")?.innerText.trim();
+
+  // If .a-offscreen is empty, get price from .a-price-whole
+  if (!price) {
+    const symbol = document.querySelector(".a-price-symbol")?.innerText.trim() || "₹";
+    const whole = document.querySelector(".a-price-whole")?.innerText.trim();
+    if (whole) {
+      price = `${symbol}${whole}`;
+    }
+  }
 
   return { title, price };
 }

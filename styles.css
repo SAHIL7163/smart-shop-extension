@@ -1,80 +1,195 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
   margin: 0;
-  padding: 15px;
-  width: 300px;
-  background-color: #f5f5f5;
-}
-
-h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.product-list {
-  list-style: none;
   padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 
-.product-item {
-  background: #fff;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+/* Body styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 380px; /* Kept your specified width */
+  background-color: #f7f9fc;
+  padding: 16px;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
   display: flex;
   align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Result container */
+.result-container {
+  min-height: 100px;
+}
+
+/* Heading */
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 12px 0 8px;
+  text-align: left;
+}
+
+/* Product list */
+.product-list {
+  list-style: none;
+  max-height: 400px; /* Scrollable */
+  overflow-y: auto;
+  padding-right: 4px; /* Prevents scrollbar overlap */
+}
+
+/* Custom scrollbar */
+.product-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.product-list::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 3px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
+
+.product-list::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Product item */
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .product-item:hover {
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.product-item:focus-within {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Product image */
 .product-image {
-  max-width: 60px;
-  max-height: 60px;
-  margin-right: 10px;
-  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
   object-fit: cover;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 
+/* Product details */
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Product title */
 .product-title {
   font-size: 14px;
-  font-weight: bold;
-  color: #0066c0;
+  font-weight: 500;
+  color: #2563eb;
   text-decoration: none;
-  display: block;
-  margin-bottom: 5px;
+  line-height: 1.4;
 }
 
 .product-title:hover {
   text-decoration: underline;
 }
 
+.product-title:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Product price */
 .product-price {
   font-size: 13px;
-  color: #b12704;
-  margin: 5px 0;
+  font-weight: 600;
+  color: #dc2626;
 }
 
+/* Comparison text */
+.comparison {
+  font-size: 12px;
+  color: #475569;
+  font-style: italic;
+}
+
+/* Loading state */
 .searching {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-size: 14px;
-  color: #666;
-  text-align: center;
+  color: #475569;
+  padding: 16px;
 }
 
-.error {
-  font-size: 14px;
-  color: #b12704;
-  text-align: center;
+.searching::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid #475569;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
+/* Error and no-results states */
+.error,
 .no-results {
   font-size: 14px;
-  color: #666;
+  color: #dc2626;
   text-align: center;
+  padding: 16px;
+  background: #fee2e2;
+  border-radius: 8px;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
